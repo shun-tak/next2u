@@ -1,125 +1,129 @@
 <!DOCTYPE html> 
 <html> 
-	<head> 
-	<title>NEXT2U</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  <head> 
+  <title>NEXT2U</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 </head> 
 <body>
-	<!-- Start of top page -->
-	<div data-role="page" id="top">
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="#buzzar" data-transition="slidefade">BUZZAR</a></li>
-				<li><a href="#go_home" data-transition="slidefade">GO HOME</a></li>
-				<li><a href="#news" data-transition="slidefade">NEWS</a></li>
-			</ul>
-		</div><!-- /content -->
-		<div data-role="footer" data-id="fixed_footer" data-position="fixed">
-			<div data-role="footer" class="ui-bar">
-					<a data-transition="none" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-			</div>
-		</div><!-- /footer -->
-	</div><!-- /page -->
+  <!-- Start of splash page -->
+  <div data-role="page">
+    <div data-role="content">
+      <a href="#top" data-transition="slidefade"><img src="images/splash.png" /></a>
+    </div><!-- /content -->
+  </div><!-- /page -->
 
-	<!-- Start of buzzar page -->
-	<div data-role="page" id="buzzar">
-			<div data-role="content">
-			<h2><a href="#top" data-rel="back">Stop</a>
-		</div><!-- /content -->
-		<div data-role="footer" data-id="fixed_footer" data-position="fixed">
-			<div data-role="footer" class="ui-bar">
-					<a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-			</div>
-		</div><!-- /footer -->
-	</div><!-- /page -->
+  <!-- Start of top page -->
+  <div data-role="page" id="top">
+    <div data-role="none;">
+      <a href="#buzzar" data-transition="slidefade"><img style="width: 100%; padding:0;margin:0;" src="./images/button_buzzar.png"></a>
+      <a href="#go_home" data-transition="slidefade"><img style="width: 100%;" src="./images/button_go_home.png"></a>
+      <a href="#news" data-transition="slidefade"><img style="width: 100%;" src="./images/button_news.png"></a>
+    </div><!-- /content -->
+    <div data-role="footer" data-id="fixed_footer" data-position="fixed">
+      <div data-role="footer" class="ui-bar">
+          <a data-transition="none" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
 
-	<!-- Start of go home page -->
-	<div data-role="page" id="go_home">
-			<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="#buzzar" data-transition="slidefade">BUZZAR</a></li>
-				<li>しゅんたっくさんが帰宅開始から15分経過</li>
-				<li>RING!RING!</li>
-				<li>NOW HOME!</li>
-			</ul>
-		</div><!-- /content -->
-		<div data-role="footer" data-id="fixed_footer" data-position="fixed">
-			<div data-role="footer" class="ui-bar">
-					<a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-			</div>
-		</div><!-- /footer -->
-	</div><!-- /page -->
+  <!-- Start of buzzar page -->
+  <div data-role="page" id="buzzar">
+      <div data-role="content">
+      <h2><a href="#top" data-rel="back">Stop</a>
+    </div><!-- /content -->
+    <div data-role="footer" data-id="fixed_footer" data-position="fixed">
+      <div data-role="footer" class="ui-bar">
+          <a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
 
-	<!-- Start of news page -->
-	<div data-role="page" id="news">
-			<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="#buzzar" data-transition="slidefade">BUZZAR</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">10月5日（金）午後11時頃、渋谷区道玄坂上の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">10月5日（金）午後7時30分頃、墨田区押上3丁目の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">10月4日（木）午後9時30分頃、町田市原町田1丁目の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">10月3日（水）午後10時頃、渋谷区道玄坂上の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">10月2日（火）午後7時30頃、新宿区歌舞伎町1丁目の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">10月1日（月）午後11時15頃、渋谷区道玄坂上の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">9月30日（日）午後9時40頃、渋谷区道玄坂上の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">9月29日（土）午後11時45頃、新宿区歌舞伎町の路上で、</a></li>
-				<li><a href="#news_detail" data-transition="slidefade">9月28日（金）午後9時30頃、町田市原町田1丁目の路上で、</a></li>
-			</ul>
-		</div><!-- /content -->
-		<div data-role="footer" data-id="fixed_footer" data-position="fixed">
-			<div data-role="footer" class="ui-bar">
-					<a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-			</div>
-		</div><!-- /footer -->
-	</div><!-- /page -->
+  <!-- Start of go home page -->
+  <div data-role="page" id="go_home">
+    <div data-role="content">
+      <a href="#buzzar" data-transition="slidefade"><img style="width: 100%;" src="./images/button_buzzar.png"></a>
+      <img style="width: 100%;" src="./images/go_home.png">
+    </div><!-- /content -->
+    <div data-role="footer" data-id="fixed_footer" data-position="fixed">
+      <div data-role="footer" class="ui-bar">
+          <a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
 
-	<!-- Start of news detail page -->
-	<div data-role="page" id="news_detail">
-			<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="#buzzar" data-transition="slidefade">BUZZAR</a></li>
-			</ul>
-			<h2>NEWS</h2>
-			<p>10月5日（金）午後11時頃、渋谷区道玄坂上の路上で、帰宅中の女性が男に身体を触られました。不審者の特徴：黒っぽいジャンパー、オートバイ利用（黒っぽい原付スクーター）</p>
-			<p>地図</p>
-		</div><!-- /content -->
-		<div data-role="footer" data-id="fixed_footer" data-position="fixed">
-			<div data-role="footer" class="ui-bar">
-					<a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-			</div>
-		</div><!-- /footer -->
-	</div><!-- /page -->
+  <!-- Start of news page -->
+  <div data-role="page" id="news">
+    <div data-role="content">
+      <a href="#buzzar" data-transition="slidefade">
+        <img style="width: 100%;" src="./images/button_buzzar.png">
+      </a>
+      <ul data-role="listview">
+        <li><a href="#news_detail" data-transition="slidefade">10月5日（金）午後11時頃、渋谷区道玄坂上の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">10月5日（金）午後7時30分頃、墨田区押上3丁目の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">10月4日（木）午後9時30分頃、町田市原町田1丁目の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">10月3日（水）午後10時頃、渋谷区道玄坂上の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">10月2日（火）午後7時30頃、新宿区歌舞伎町1丁目の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">10月1日（月）午後11時15頃、渋谷区道玄坂上の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">9月30日（日）午後9時40頃、渋谷区道玄坂上の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">9月29日（土）午後11時45頃、新宿区歌舞伎町の路上で、</a></li>
+        <li><a href="#news_detail" data-transition="slidefade">9月28日（金）午後9時30頃、町田市原町田1丁目の路上で、</a></li>
+      </ul>
+    </div><!-- /content -->
+    <div data-role="footer" data-id="fixed_footer" data-position="fixed">
+      <div data-role="footer" class="ui-bar">
+          <a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
 
-	<!-- Start of preferences page -->
-	<div data-role="page" id="preferences">
-			<div data-role="content">
-			<h2>設定</h2>
-			<ul data-role="listview">
-				<li>項目1</li>
-				<li>項目2</li>
-				<li>項目3</li>
-				<li>項目4</li>
-			</ul>
-		</div><!-- /content -->
-		<div data-role="footer" data-id="fixed_footer" data-position="fixed">
-			<div data-role="footer" class="ui-bar">
-					<a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-					<a data-transition="none" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
-			</div>
-		</div><!-- /footer -->
-	</div><!-- /page -->
+  <!-- Start of news detail page -->
+  <div data-role="page" id="news_detail">
+    <div data-role="content">
+      <a href="#buzzar" data-transition="slidefade">
+        <img style="width: 100%;" src="./images/button_buzzar.png">
+      </a>
+      <h2>NEWS</h2>
+      <p>10月5日（金）午後11時頃、渋谷区道玄坂上の路上で、帰宅中の女性が男に身体を触られました。不審者の特徴：黒っぽいジャンパー、オートバイ利用（黒っぽい原付スクーター）</p>
+      <img src="https://maps.googleapis.com/maps/api/staticmap?center=3,Maruyamacho,Shibuya,Tokyo&amp;zoom=16&amp;size=288x200&amp;markers=3,Maruyamacho,Shibuya,Tokyo&amp;sensor=false"
+        width="288" height="200">
+    </div><!-- /content -->
+    <div data-role="footer" data-id="fixed_footer" data-position="fixed">
+      <div data-role="footer" class="ui-bar">
+          <a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-transition="slidefade" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
+
+  <!-- Start of preferences page -->
+  <div data-role="page" id="preferences">
+      <div data-role="content">
+      <h2>設定</h2>
+      <ul data-role="listview">
+        <li>項目1</li>
+        <li>項目2</li>
+        <li>項目3</li>
+        <li>項目4</li>
+      </ul>
+    </div><!-- /content -->
+    <div data-role="footer" data-id="fixed_footer" data-position="fixed">
+      <div data-role="footer" class="ui-bar">
+          <a data-rel="back" data-icon="back" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-direction="reverse" data-transition="slidefade" data-icon="home" href="#top" title="home" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+          <a data-transition="none" data-icon="gear" href="#preferences" title="preferences" data-role="button" data-iconpos="notext" data-mini="true" data-inline="true"></a>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
 </body>
 </html>
